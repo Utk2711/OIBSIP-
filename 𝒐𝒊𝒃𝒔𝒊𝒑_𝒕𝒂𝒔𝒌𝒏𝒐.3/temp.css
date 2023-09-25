@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: aquamarine;
+  background: linear-gradient(45deg, purple 0%, aquamarine 100%);
+  color: #222;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.mobile {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom:45px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.temperature-converter {
+  background: #fff;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 25px 45px;
+  min-width: 320px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 25px 28px rgba(0,0,0,0.25), 0 15px 15px rgba(0,0,0,0.22);
+
+  backdrop-filter: blur(21px);
+}
+
+.title {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #222;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.result {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  margin: 25px 0;
+}
+.result-heading {
+  color: #555;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.celsius-value {
+  border-bottom: 2px solid #ccc;
+  padding: 10px;
+  transition: all .45s ease;
+}
+label {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+input,
+select {
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #ccc;
+  padding: 8px;
+  margin-bottom: 15px;
+}
+input:focus {
+  border: 1px solid blue;
+}
+.degree-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.degree-field {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+option {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: white;
+  color:black;
+}
+#convert-btn {
+  background:blue;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #f6f6f6;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  padding: 12px 80px;
+  transition: all 0.3s ease-in;
+}
+#convert-btn:hover {
+  background: linear-gradient(to bottom, #4a47e7, #322fda);
+  transform: translateY(-2px);
+}
+
+/* Add a right margin to each icon */
+
+.fa {
+  margin-left: -12px;
+  margin-right: 8px;
+}
+
+.loading {
+  display:none;
+}
